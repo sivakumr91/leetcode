@@ -1,0 +1,20 @@
+Case 1:
+Status: Passed
+Input:
+purchaseAmount = 9
+Output = 90
+Expected = 90
+
+Case 2:
+Status: Passed
+Input:
+purchaseAmount = 15
+Output = 80
+Expected = 80
+
+Case 3:
+Status: Passed
+Input:
+purchaseAmount = 10
+Output = 90
+Expected = 90

@@ -11,5 +11,17 @@
     ],
     "solvedAt": "2026-08-14T04:47:42.265Z",
     "folderName": "0001-two-sum"
+  },
+  {
+    "id": 2806,
+    "title": "Account Balance After Rounded Purchase",
+    "slug": "account-balance-after-rounded-purchase",
+    "difficulty": "Easy",
+    "language": "python3",
+    "topics": [
+      "Math"
+    ],
+    "solvedAt": "2026-08-14T06:39:54.077Z",
+    "folderName": "2806-account-balance-after-rounded-purchase"
   }
 ]
