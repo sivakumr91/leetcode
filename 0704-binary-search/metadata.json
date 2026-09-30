@@ -1,0 +1,21 @@
+{
+  "description": "Given an array of integers `nums` which is sorted in ascending order, and an integer `target`, write a function to search `target` in `nums`. If `target` exists, then return its index. Otherwise, return `-1`.\n\nYou must write an algorithm with `O(log n)` runtime complexity.\n\nExample 1:\n\n```\n\n**Input:** nums = [-1,0,3,5,9,12], target = 9\n**Output:** 4\n**Explanation:** 9 exists in nums and its index is 4\n\n```\n\nExample 2:\n\n```\n\n**Input:** nums = [-1,0,3,5,9,12], target = 2\n**Output:** -1\n**Explanation:** 2 does not exist in nums so return -1\n\n```\n\n**Constraints:**\n\n- `1 <= nums.length <= 10^4`\n\n- `-10^4 < nums[i], target < 10^4`\n\n- All the integers in `nums` are **unique**.\n\n- `nums` is sorted in ascending order.",
+  "difficulty": "Easy",
+  "language": "python",
+  "leetCodeUrl": "https://leetcode.com/problems/binary-search/submissions/2157854087/",
+  "memory": "12.5 MB",
+  "problemId": 704,
+  "runtime": "0 ms",
+  "slug": "binary-search",
+  "sourceCode": "class Solution:\n    def search(self, nums, target):\n        left = 0\n        right = len(nums) - 1\n\n        while left <= right:\n            mid = (left + right) // 2\n\n            if nums[mid] == target:\n                return mid\n            elif nums[mid] < target:\n                left = mid + 1\n            else:\n                right = mid - 1\n\n        return -1",
+  "submittedAt": "2026-09-30T06:13:07.566Z",
+  "testCases": "Case 1:\nStatus: Passed\nInput:\nnums = [-1,0,3,5,9,12]\ntarget = 9\nOutput = 4\nExpected = 4\n\nCase 2:\nStatus: Passed\nInput:\nnums = [-1,0,3,5,9,12]\ntarget = 2\nOutput = -1\nExpected = -1",
+  "title": "Binary Search",
+  "topics": [
+    "Array",
+    "Binary Search"
+  ],
+  "submissionDate": "2026-09-30T06:13:07.566Z",
+  "folderName": "0704-binary-search",
+  "githubUrl": "https://github.com/sivakumr91/leetcode/blob/main/0704-binary-search/solution.py"
+}

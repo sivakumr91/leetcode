@@ -1,0 +1,15 @@
+[
+  {
+    "id": 704,
+    "title": "Binary Search",
+    "slug": "binary-search",
+    "difficulty": "Easy",
+    "language": "python",
+    "topics": [
+      "Array",
+      "Binary Search"
+    ],
+    "solvedAt": "2026-09-30T06:13:07.566Z",
+    "folderName": "0704-binary-search"
+  }
+]
