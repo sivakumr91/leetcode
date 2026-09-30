@@ -1,5 +1,19 @@
 [
   {
+    "id": 102,
+    "title": "Binary Tree Level Order Traversal",
+    "slug": "binary-tree-level-order-traversal",
+    "difficulty": "Medium",
+    "language": "python",
+    "topics": [
+      "Tree",
+      "Breadth-First Search",
+      "Binary Tree"
+    ],
+    "solvedAt": "2026-09-30T06:15:13.209Z",
+    "folderName": "0102-binary-tree-level-order-traversal"
+  },
+  {
     "id": 704,
     "title": "Binary Search",
     "slug": "binary-search",

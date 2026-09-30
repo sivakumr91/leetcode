@@ -1,19 +1,22 @@
 {
-  "totalSolved": 1,
+  "totalSolved": 2,
   "easy": 1,
-  "medium": 0,
+  "medium": 1,
   "hard": 0,
   "currentStreak": 1,
   "longestStreak": 1,
   "languages": {
-    "python": 1
+    "python": 2
   },
   "topics": {
     "Array": 1,
-    "Binary Search": 1
+    "Binary Search": 1,
+    "Tree": 1,
+    "Breadth-First Search": 1,
+    "Binary Tree": 1
   },
+  "lastSolved": "2026-09-30T06:15:13.209Z",
   "monthlySolves": {
-    "2026-09": 1
-  },
-  "lastSolved": "2026-09-30T06:13:07.566Z"
+    "2026-09": 2
+  }
 }

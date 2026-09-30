@@ -1,0 +1,22 @@
+{
+  "description": "Given the `root` of a binary tree, return *the level order traversal of its nodes' values*. (i.e., from left to right, level by level).\n\nExample 1:\n\n```\n\n**Input:** root = [3,9,20,null,null,15,7]\n**Output:** [[3],[9,20],[15,7]]\n\n```\n\nExample 2:\n\n```\n\n**Input:** root = [1]\n**Output:** [[1]]\n\n```\n\nExample 3:\n\n```\n\n**Input:** root = []\n**Output:** []\n\n```\n\n**Constraints:**\n\n- The number of nodes in the tree is in the range `[0, 2000]`.\n\n- `-1000 <= Node.val <= 1000`",
+  "difficulty": "Medium",
+  "language": "python",
+  "leetCodeUrl": "https://leetcode.com/problems/binary-tree-level-order-traversal/submissions/2157856210/",
+  "memory": "13.1 MB",
+  "problemId": 102,
+  "runtime": "0 ms",
+  "slug": "binary-tree-level-order-traversal",
+  "sourceCode": "from collections import deque\n\nclass Solution:\n    def levelOrder(self, root):\n        if not root:\n            return []\n\n        result = []\n        queue = deque([root])\n\n        while queue:\n            level = []\n\n            # Number of nodes in current level\n            for _ in range(len(queue)):\n                node = queue.popleft()\n                level.append(node.val)\n\n                if node.left:\n                    queue.append(node.left)\n\n                if node.right:\n                    queue.append(node.right)\n\n            result.append(level)\n\n        return result",
+  "submittedAt": "2026-09-30T06:15:13.209Z",
+  "testCases": "Case 1:\nStatus: Passed\nInput:\nroot = [3,9,20,null,null,15,7]\nOutput = [[3],[9,20],[15,7]]\nExpected = [[3],[9,20],[15,7]]\n\nCase 2:\nStatus: Passed\nInput:\nroot = [1]\nOutput = [[1]]\nExpected = [[1]]\n\nCase 3:\nStatus: Passed\nInput:\nroot = []\nOutput = []\nExpected = []",
+  "title": "Binary Tree Level Order Traversal",
+  "topics": [
+    "Tree",
+    "Breadth-First Search",
+    "Binary Tree"
+  ],
+  "submissionDate": "2026-09-30T06:15:13.209Z",
+  "folderName": "0102-binary-tree-level-order-traversal",
+  "githubUrl": "https://github.com/sivakumr91/leetcode/blob/main/0102-binary-tree-level-order-traversal/solution.py"
+}
