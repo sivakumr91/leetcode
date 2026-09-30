@@ -14,6 +14,21 @@
     "folderName": "0102-binary-tree-level-order-traversal"
   },
   {
+    "id": 543,
+    "title": "Diameter of Binary Tree",
+    "slug": "diameter-of-binary-tree",
+    "difficulty": "Easy",
+    "language": "python",
+    "topics": [
+      "Tree",
+      "Depth-First Search",
+      "Binary Tree",
+      "DP on Trees"
+    ],
+    "solvedAt": "2026-09-30T06:18:26.040Z",
+    "folderName": "0543-diameter-of-binary-tree"
+  },
+  {
     "id": 704,
     "title": "Binary Search",
     "slug": "binary-search",
