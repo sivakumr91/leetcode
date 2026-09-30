@@ -29,6 +29,20 @@
     "folderName": "0543-diameter-of-binary-tree"
   },
   {
+    "id": 700,
+    "title": "Search in a Binary Search Tree",
+    "slug": "search-in-a-binary-search-tree",
+    "difficulty": "Easy",
+    "language": "python",
+    "topics": [
+      "Tree",
+      "Binary Search Tree",
+      "Binary Tree"
+    ],
+    "solvedAt": "2026-09-30T06:19:58.708Z",
+    "folderName": "0700-search-in-a-binary-search-tree"
+  },
+  {
     "id": 704,
     "title": "Binary Search",
     "slug": "binary-search",
