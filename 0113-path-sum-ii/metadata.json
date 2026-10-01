@@ -1,0 +1,23 @@
+{
+  "description": "Given the `root` of a binary tree and an integer `targetSum`, return *all **root-to-leaf** paths where the sum of the node values in the path equals *`targetSum`*. Each path should be returned as a list of the node **values**, not node references*.\n\nA **root-to-leaf** path is a path starting from the root and ending at any leaf node. A **leaf** is a node with no children.\n\nExample 1:\n\n```\n\n**Input:** root = [5,4,8,11,null,13,4,7,2,null,null,5,1], targetSum = 22\n**Output:** [[5,4,11,2],[5,8,4,5]]\n**Explanation:** There are two paths whose sum equals targetSum:\n5 + 4 + 11 + 2 = 22\n5 + 8 + 4 + 5 = 22\n\n```\n\nExample 2:\n\n```\n\n**Input:** root = [1,2,3], targetSum = 5\n**Output:** []\n\n```\n\nExample 3:\n\n```\n\n**Input:** root = [1,2], targetSum = 0\n**Output:** []\n\n```\n\n**Constraints:**\n\n- The number of nodes in the tree is in the range `[0, 5000]`.\n\n- `-1000 <= Node.val <= 1000`\n\n- `-1000 <= targetSum <= 1000`",
+  "difficulty": "Medium",
+  "language": "python",
+  "leetCodeUrl": "https://leetcode.com/problems/path-sum-ii/submissions/2158821254/",
+  "memory": "12.3 MB",
+  "problemId": 113,
+  "runtime": "0 ms",
+  "slug": "path-sum-ii",
+  "sourceCode": "# Definition for a binary tree node.\n# class TreeNode(object):\n#     def __init__(self, val=0, left=None, right=None):\n#         self.val = val\n#         self.left = left\n#         self.right = right\n\nclass Solution(object):\n    def pathSum(self, root, targetSum):\n        \"\"\"\n        :type root: Optional[TreeNode]\n        :type targetSum: int\n        :rtype: List[List[int]]\n        \"\"\"\n\n        result = []\n        path = []\n\n        def dfs(node, remaining):\n            if not node:\n                return\n\n            path.append(node.val)\n            remaining -= node.val\n\n            # Check if it is a leaf\n            if node.left is None and node.right is None:\n                if remaining == 0:\n                    result.append(path[:])\n\n            dfs(node.left, remaining)\n            dfs(node.right, remaining)\n\n            # Backtrack\n            path.pop()\n\n        dfs(root, targetSum)\n\n        return result",
+  "submittedAt": "2026-10-01T05:05:56.737Z",
+  "testCases": "Case 1:\nStatus: Passed\nInput:\nroot = [5,4,8,11,null,13,4,7,2,null,null,5,1]\ntargetSum = 22\nOutput = [[5,4,11,2],[5,8,4,5]]\nExpected = [[5,4,11,2],[5,8,4,5]]\n\nCase 2:\nStatus: Passed\nInput:\nroot = [1,2,3]\ntargetSum = 5\nOutput = []\nExpected = []\n\nCase 3:\nStatus: Passed\nInput:\nroot = [1,2]\ntargetSum = 0\nOutput = []\nExpected = []",
+  "title": "Path Sum II",
+  "topics": [
+    "Backtracking",
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "submissionDate": "2026-10-01T05:05:56.737Z",
+  "folderName": "0113-path-sum-ii",
+  "githubUrl": "https://github.com/sivakumr91/leetcode/blob/main/0113-path-sum-ii/solution.py"
+}

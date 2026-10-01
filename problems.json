@@ -56,6 +56,21 @@
     "folderName": "0103-binary-tree-zigzag-level-order-traversal"
   },
   {
+    "id": 113,
+    "title": "Path Sum II",
+    "slug": "path-sum-ii",
+    "difficulty": "Medium",
+    "language": "python",
+    "topics": [
+      "Backtracking",
+      "Tree",
+      "Depth-First Search",
+      "Binary Tree"
+    ],
+    "solvedAt": "2026-10-01T05:05:56.737Z",
+    "folderName": "0113-path-sum-ii"
+  },
+  {
     "id": 173,
     "title": "Binary Search Tree Iterator",
     "slug": "binary-search-tree-iterator",
