@@ -73,6 +73,20 @@
     "folderName": "0173-binary-search-tree-iterator"
   },
   {
+    "id": 450,
+    "title": "Delete Node in a BST",
+    "slug": "delete-node-in-a-bst",
+    "difficulty": "Medium",
+    "language": "python",
+    "topics": [
+      "Tree",
+      "Binary Search Tree",
+      "Binary Tree"
+    ],
+    "solvedAt": "2026-10-01T05:02:54.322Z",
+    "folderName": "0450-delete-node-in-a-bst"
+  },
+  {
     "id": 455,
     "title": "Assign Cookies",
     "slug": "assign-cookies",

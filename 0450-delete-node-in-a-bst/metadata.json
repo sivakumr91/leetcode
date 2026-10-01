@@ -1,0 +1,22 @@
+{
+  "description": "Given a root node reference of a BST and a key, delete the node with the given key in the BST. Return *the **root node reference** (possibly updated) of the BST*.\n\nBasically, the deletion can be divided into two stages:\n\n- Search for a node to remove.\n\n- If the node is found, delete the node.\n\nExample 1:\n\n```\n\n**Input:** root = [5,3,6,2,4,null,7], key = 3\n**Output:** [5,4,6,2,null,null,7]\n**Explanation:** Given key to delete is 3. So we find the node with value 3 and delete it.\nOne valid answer is [5,4,6,2,null,null,7], shown in the above BST.\nPlease notice that another valid answer is [5,2,6,null,4,null,7] and it's also accepted.\n\n```\n\nExample 2:\n\n```\n\n**Input:** root = [5,3,6,2,4,null,7], key = 0\n**Output:** [5,3,6,2,4,null,7]\n**Explanation:** The tree does not contain a node with value = 0.\n\n```\n\nExample 3:\n\n```\n\n**Input:** root = [], key = 0\n**Output:** []\n\n```\n\n**Constraints:**\n\n- The number of nodes in the tree is in the range `[0, 10^4]`.\n\n- `-10^5 <= Node.val <= 10^5`\n\n- Each node has a **unique** value.\n\n- `root` is a valid binary search tree.\n\n- `-10^5 <= key <= 10^5`\n\n**Follow up:** Could you solve it with time complexity `O(height of tree)`?",
+  "difficulty": "Medium",
+  "language": "python",
+  "leetCodeUrl": "https://leetcode.com/problems/delete-node-in-a-bst/submissions/2158818059/",
+  "memory": "12.5 MB",
+  "problemId": 450,
+  "runtime": "0 ms",
+  "slug": "delete-node-in-a-bst",
+  "sourceCode": "# Definition for a binary tree node.\n# class TreeNode(object):\n#     def __init__(self, val=0, left=None, right=None):\n#         self.val = val\n#         self.left = left\n#         self.right = right\n\nclass Solution(object):\n    def deleteNode(self, root, key):\n        \"\"\"\n        :type root: Optional[TreeNode]\n        :type key: int\n        :rtype: Optional[TreeNode]\n        \"\"\"\n\n        if root is None:\n            return None\n\n        if key < root.val:\n            root.left = self.deleteNode(root.left, key)\n\n        elif key > root.val:\n            root.right = self.deleteNode(root.right, key)\n\n        else:\n            # Case 1: No left child\n            if root.left is None:\n                return root.right\n\n            # Case 2: No right child\n            if root.right is None:\n                return root.left\n\n            # Case 3: Two children\n            successor = root.right\n\n            while successor.left:\n                successor = successor.left\n\n            root.val = successor.val\n            root.right = self.deleteNode(root.right, successor.val)\n\n        return root",
+  "submittedAt": "2026-10-01T05:02:54.322Z",
+  "testCases": "Case 1:\nStatus: Passed\nInput:\nroot = [5,3,6,2,4,null,7]\nkey = 3\nOutput = [5,4,6,2,null,null,7]\nExpected = [5,4,6,2,null,null,7]\n\nCase 2:\nStatus: Passed\nInput:\nroot = [5,3,6,2,4,null,7]\nkey = 0\nOutput = [5,3,6,2,4,null,7]\nExpected = [5,3,6,2,4,null,7]\n\nCase 3:\nStatus: Passed\nInput:\nroot = []\nkey = 0\nOutput = []\nExpected = []",
+  "title": "Delete Node in a BST",
+  "topics": [
+    "Tree",
+    "Binary Search Tree",
+    "Binary Tree"
+  ],
+  "submissionDate": "2026-10-01T05:02:54.322Z",
+  "folderName": "0450-delete-node-in-a-bst",
+  "githubUrl": "https://github.com/sivakumr91/leetcode/blob/main/0450-delete-node-in-a-bst/solution.py"
+}

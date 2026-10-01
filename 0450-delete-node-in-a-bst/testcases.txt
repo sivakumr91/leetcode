@@ -1,0 +1,23 @@
+Case 1:
+Status: Passed
+Input:
+root = [5,3,6,2,4,null,7]
+key = 3
+Output = [5,4,6,2,null,null,7]
+Expected = [5,4,6,2,null,null,7]
+
+Case 2:
+Status: Passed
+Input:
+root = [5,3,6,2,4,null,7]
+key = 0
+Output = [5,3,6,2,4,null,7]
+Expected = [5,3,6,2,4,null,7]
+
+Case 3:
+Status: Passed
+Input:
+root = []
+key = 0
+Output = []
+Expected = []
