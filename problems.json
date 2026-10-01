@@ -14,6 +14,20 @@
     "folderName": "0102-binary-tree-level-order-traversal"
   },
   {
+    "id": 103,
+    "title": "Binary Tree Zigzag Level Order Traversal",
+    "slug": "binary-tree-zigzag-level-order-traversal",
+    "difficulty": "Medium",
+    "language": "python",
+    "topics": [
+      "Tree",
+      "Breadth-First Search",
+      "Binary Tree"
+    ],
+    "solvedAt": "2026-10-01T04:50:12.252Z",
+    "folderName": "0103-binary-tree-zigzag-level-order-traversal"
+  },
+  {
     "id": 543,
     "title": "Diameter of Binary Tree",
     "slug": "diameter-of-binary-tree",
