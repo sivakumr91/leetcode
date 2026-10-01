@@ -1,0 +1,23 @@
+{
+  "description": "You are given a string `s`. We want to partition the string into as many parts as possible so that each letter appears in at most one part. For example, the string `\"ababcc\"` can be partitioned into `[\"abab\", \"cc\"]`, but partitions such as `[\"aba\", \"bcc\"]` or `[\"ab\", \"ab\", \"cc\"]` are invalid.\n\nNote that the partition is done so that after concatenating all the parts in order, the resultant string should be `s`.\n\nReturn *a list of integers representing the size of these parts*.\n\nExample 1:\n\n```\n\n**Input:** s = \"ababcbacadefegdehijhklij\"\n**Output:** [9,7,8]\n**Explanation:**\nThe partition is \"ababcbaca\", \"defegde\", \"hijhklij\".\nThis is a partition so that each letter appears in at most one part.\nA partition like \"ababcbacadefegde\", \"hijhklij\" is incorrect, because it splits s into less parts.\n\n```\n\nExample 2:\n\n```\n\n**Input:** s = \"eccbbbbdec\"\n**Output:** [10]\n\n```\n\n**Constraints:**\n\n- `1 <= s.length <= 500`\n\n- `s` consists of lowercase English letters.",
+  "difficulty": "Medium",
+  "language": "python",
+  "leetCodeUrl": "https://leetcode.com/problems/partition-labels/submissions/2158814202/",
+  "memory": "12.4 MB",
+  "problemId": 763,
+  "runtime": "0 ms",
+  "slug": "partition-labels",
+  "sourceCode": "class Solution(object):\n    def partitionLabels(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: List[int]\n        \"\"\"\n        last = {}\n\n        # Store the last position of every character\n        for i in range(len(s)):\n            last[s[i]] = i\n\n        result = []\n        start = 0\n        end = 0\n\n        for i in range(len(s)):\n            end = max(end, last[s[i]])\n\n            if i == end:\n                result.append(end - start + 1)\n                start = i + 1\n\n        return result",
+  "submittedAt": "2026-10-01T04:59:07.737Z",
+  "testCases": "Case 1:\nStatus: Passed\nInput:\ns = \"ababcbacadefegdehijhklij\"\nOutput = [9,7,8]\nExpected = [9,7,8]\n\nCase 2:\nStatus: Passed\nInput:\ns = \"eccbbbbdec\"\nOutput = [10]\nExpected = [10]",
+  "title": "Partition Labels",
+  "topics": [
+    "Hash Table",
+    "Two Pointers",
+    "String",
+    "Greedy"
+  ],
+  "submissionDate": "2026-10-01T04:59:07.737Z",
+  "folderName": "0763-partition-labels",
+  "githubUrl": "https://github.com/sivakumr91/leetcode/blob/main/0763-partition-labels/solution.py"
+}

@@ -59,6 +59,22 @@
     "folderName": "0173-binary-search-tree-iterator"
   },
   {
+    "id": 455,
+    "title": "Assign Cookies",
+    "slug": "assign-cookies",
+    "difficulty": "Easy",
+    "language": "python",
+    "topics": [
+      "Array",
+      "Two Pointers",
+      "Greedy",
+      "Sorting",
+      "Quicksort"
+    ],
+    "solvedAt": "2026-10-01T04:57:33.371Z",
+    "folderName": "0455-assign-cookies"
+  },
+  {
     "id": 543,
     "title": "Diameter of Binary Tree",
     "slug": "diameter-of-binary-tree",
@@ -99,5 +115,20 @@
     ],
     "solvedAt": "2026-09-30T06:13:07.566Z",
     "folderName": "0704-binary-search"
+  },
+  {
+    "id": 763,
+    "title": "Partition Labels",
+    "slug": "partition-labels",
+    "difficulty": "Medium",
+    "language": "python",
+    "topics": [
+      "Hash Table",
+      "Two Pointers",
+      "String",
+      "Greedy"
+    ],
+    "solvedAt": "2026-10-01T04:59:07.737Z",
+    "folderName": "0763-partition-labels"
   }
 ]
