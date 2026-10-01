@@ -1,0 +1,5 @@
+Case 1:
+Status: Passed
+Input:
+inputs = ["BSTIterator","next","next","hasNext","next","hasNext","next","hasNext","next","hasNext"]
+inputs = [[[7,3,15,null,null,9,20]],[],[],[],[],[],[],[],[],[]]

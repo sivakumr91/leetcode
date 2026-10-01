@@ -28,6 +28,23 @@
     "folderName": "0103-binary-tree-zigzag-level-order-traversal"
   },
   {
+    "id": 173,
+    "title": "Binary Search Tree Iterator",
+    "slug": "binary-search-tree-iterator",
+    "difficulty": "Medium",
+    "language": "python",
+    "topics": [
+      "Stack",
+      "Tree",
+      "Design",
+      "Binary Search Tree",
+      "Binary Tree",
+      "Iterator"
+    ],
+    "solvedAt": "2026-10-01T04:55:22.719Z",
+    "folderName": "0173-binary-search-tree-iterator"
+  },
+  {
     "id": 543,
     "title": "Diameter of Binary Tree",
     "slug": "diameter-of-binary-tree",
