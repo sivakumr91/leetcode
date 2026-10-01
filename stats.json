@@ -1,15 +1,15 @@
 {
-  "totalSolved": 9,
+  "totalSolved": 10,
   "easy": 4,
-  "medium": 5,
+  "medium": 6,
   "hard": 0,
   "currentStreak": 2,
   "longestStreak": 2,
   "languages": {
-    "python": 9
+    "python": 10
   },
   "topics": {
-    "Array": 3,
+    "Array": 4,
     "Binary Search": 1,
     "Tree": 5,
     "Breadth-First Search": 2,
@@ -23,13 +23,14 @@
     "Sorting": 2,
     "Quicksort": 2,
     "Two Pointers": 2,
-    "Greedy": 2,
+    "Greedy": 3,
     "Hash Table": 1,
-    "String": 1
+    "String": 1,
+    "Dynamic Programming": 1
   },
-  "lastSolved": "2026-10-01T04:59:07.737Z",
+  "lastSolved": "2026-10-01T05:01:19.136Z",
   "monthlySolves": {
     "2026-09": 4,
-    "2026-10": 5
+    "2026-10": 6
   }
 }

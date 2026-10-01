@@ -1,5 +1,19 @@
 [
   {
+    "id": 55,
+    "title": "Jump Game",
+    "slug": "jump-game",
+    "difficulty": "Medium",
+    "language": "python",
+    "topics": [
+      "Array",
+      "Dynamic Programming",
+      "Greedy"
+    ],
+    "solvedAt": "2026-10-01T05:01:19.136Z",
+    "folderName": "0055-jump-game"
+  },
+  {
     "id": 56,
     "title": "Merge Intervals",
     "slug": "merge-intervals",
