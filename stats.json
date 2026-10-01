@@ -1,22 +1,22 @@
 {
-  "totalSolved": 11,
+  "totalSolved": 12,
   "easy": 4,
-  "medium": 7,
+  "medium": 8,
   "hard": 0,
   "currentStreak": 2,
   "longestStreak": 2,
   "languages": {
-    "python": 11
+    "python": 12
   },
   "topics": {
     "Array": 4,
     "Binary Search": 1,
-    "Tree": 6,
+    "Tree": 7,
     "Breadth-First Search": 2,
-    "Binary Tree": 6,
-    "Depth-First Search": 1,
+    "Binary Tree": 7,
+    "Depth-First Search": 2,
     "DP on Trees": 1,
-    "Binary Search Tree": 3,
+    "Binary Search Tree": 4,
     "Stack": 1,
     "Design": 1,
     "Iterator": 1,
@@ -26,11 +26,13 @@
     "Greedy": 3,
     "Hash Table": 1,
     "String": 1,
-    "Dynamic Programming": 1
+    "Dynamic Programming": 1,
+    "Binary Lifting": 1,
+    "Lowest Common Ancestor": 1
   },
-  "lastSolved": "2026-10-01T05:02:54.322Z",
+  "lastSolved": "2026-10-01T05:03:59.973Z",
   "monthlySolves": {
     "2026-09": 4,
-    "2026-10": 7
+    "2026-10": 8
   }
 }

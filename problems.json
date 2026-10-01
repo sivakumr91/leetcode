@@ -73,6 +73,23 @@
     "folderName": "0173-binary-search-tree-iterator"
   },
   {
+    "id": 235,
+    "title": "Lowest Common Ancestor of a Binary Search Tree",
+    "slug": "lowest-common-ancestor-of-a-binary-search-tree",
+    "difficulty": "Medium",
+    "language": "python",
+    "topics": [
+      "Tree",
+      "Depth-First Search",
+      "Binary Search Tree",
+      "Binary Tree",
+      "Binary Lifting",
+      "Lowest Common Ancestor"
+    ],
+    "solvedAt": "2026-10-01T05:03:59.973Z",
+    "folderName": "0235-lowest-common-ancestor-of-a-binary-search-tree"
+  },
+  {
     "id": 450,
     "title": "Delete Node in a BST",
     "slug": "delete-node-in-a-bst",

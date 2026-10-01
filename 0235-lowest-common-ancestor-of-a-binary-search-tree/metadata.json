@@ -1,0 +1,25 @@
+{
+  "description": "Given a binary search tree (BST), find the lowest common ancestor (LCA) node of two given nodes in the BST.\n\nAccording to the definition of LCA on Wikipedia: &ldquo;The lowest common ancestor is defined between two nodes `p` and `q` as the lowest node in `T` that has both `p` and `q` as descendants (where we allow **a node to be a descendant of itself**).&rdquo;\n\nExample 1:\n\n```\n\n**Input:** root = [6,2,8,0,4,7,9,null,null,3,5], p = 2, q = 8\n**Output:** 6\n**Explanation:** The LCA of nodes 2 and 8 is 6.\n\n```\n\nExample 2:\n\n```\n\n**Input:** root = [6,2,8,0,4,7,9,null,null,3,5], p = 2, q = 4\n**Output:** 2\n**Explanation:** The LCA of nodes 2 and 4 is 2, since a node can be a descendant of itself according to the LCA definition.\n\n```\n\nExample 3:\n\n```\n\n**Input:** root = [2,1], p = 2, q = 1\n**Output:** 2\n\n```\n\n**Constraints:**\n\n- The number of nodes in the tree is in the range `[2, 10^5]`.\n\n- `-10^9 <= Node.val <= 10^9`\n\n- All `Node.val` are **unique**.\n\n- `p != q`\n\n- `p` and `q` will exist in the BST.",
+  "difficulty": "Medium",
+  "language": "python",
+  "leetCodeUrl": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/submissions/2158819187/",
+  "memory": "20.4 MB",
+  "problemId": 235,
+  "runtime": "47 ms",
+  "slug": "lowest-common-ancestor-of-a-binary-search-tree",
+  "sourceCode": "# Definition for a binary tree node.\n# class TreeNode(object):\n#     def __init__(self, x):\n#         self.val = x\n#         self.left = None\n#         self.right = None\n\nclass Solution(object):\n    def lowestCommonAncestor(self, root, p, q):\n        \"\"\"\n        :type root: TreeNode\n        :type p: TreeNode\n        :type q: TreeNode\n        :rtype: TreeNode\n        \"\"\"\n\n        while root:\n            if p.val < root.val and q.val < root.val:\n                root = root.left\n\n            elif p.val > root.val and q.val > root.val:\n                root = root.right\n\n            else:\n                return root",
+  "submittedAt": "2026-10-01T05:03:59.973Z",
+  "testCases": "Case 1:\nStatus: Passed\nInput:\nroot = [6,2,8,0,4,7,9,null,null,3,5]\np = 2\nq = 8\nOutput = 6\nExpected = 6\n\nCase 2:\nStatus: Passed\nInput:\nroot = [6,2,8,0,4,7,9,null,null,3,5]\np = 2\nq = 4\nOutput = 2\nExpected = 2\n\nCase 3:\nStatus: Passed\nInput:\nroot = [2,1]\np = 2\nq = 1\nOutput = 2\nExpected = 2",
+  "title": "Lowest Common Ancestor of a Binary Search Tree",
+  "topics": [
+    "Tree",
+    "Depth-First Search",
+    "Binary Search Tree",
+    "Binary Tree",
+    "Binary Lifting",
+    "Lowest Common Ancestor"
+  ],
+  "submissionDate": "2026-10-01T05:03:59.973Z",
+  "folderName": "0235-lowest-common-ancestor-of-a-binary-search-tree",
+  "githubUrl": "https://github.com/sivakumr91/leetcode/blob/main/0235-lowest-common-ancestor-of-a-binary-search-tree/solution.py"
+}
