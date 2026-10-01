@@ -1,15 +1,15 @@
 {
-  "totalSolved": 6,
+  "totalSolved": 7,
   "easy": 3,
-  "medium": 3,
+  "medium": 4,
   "hard": 0,
   "currentStreak": 2,
   "longestStreak": 2,
   "languages": {
-    "python": 6
+    "python": 7
   },
   "topics": {
-    "Array": 1,
+    "Array": 2,
     "Binary Search": 1,
     "Tree": 5,
     "Breadth-First Search": 2,
@@ -19,11 +19,13 @@
     "Binary Search Tree": 2,
     "Stack": 1,
     "Design": 1,
-    "Iterator": 1
+    "Iterator": 1,
+    "Sorting": 1,
+    "Quicksort": 1
   },
-  "lastSolved": "2026-10-01T04:55:22.719Z",
+  "lastSolved": "2026-10-01T04:56:22.470Z",
   "monthlySolves": {
     "2026-09": 4,
-    "2026-10": 2
+    "2026-10": 3
   }
 }

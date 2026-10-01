@@ -1,0 +1,22 @@
+{
+  "description": "Given an array of `intervals` where `intervals[i] = [start_i, end_i]`, merge all overlapping intervals, and return *an array of the non-overlapping intervals that cover all the intervals in the input*.\n\nExample 1:\n\n```\n\n**Input:** intervals = [[1,3],[2,6],[8,10],[15,18]]\n**Output:** [[1,6],[8,10],[15,18]]\n**Explanation:** Since intervals [1,3] and [2,6] overlap, merge them into [1,6].\n\n```\n\nExample 2:\n\n```\n\n**Input:** intervals = [[1,4],[4,5]]\n**Output:** [[1,5]]\n**Explanation:** Intervals [1,4] and [4,5] are considered overlapping.\n\n```\n\nExample 3:\n\n```\n\n**Input:** intervals = [[4,7],[1,4]]\n**Output:** [[1,7]]\n**Explanation:** Intervals [1,4] and [4,7] are considered overlapping.\n\n```\n\n**Constraints:**\n\n- `1 <= intervals.length <= 10^4`\n\n- `intervals[i].length == 2`\n\n- `0 <= start_i <= end_i <= 10^4`",
+  "difficulty": "Medium",
+  "language": "python",
+  "leetCodeUrl": "https://leetcode.com/problems/merge-intervals/submissions/2158811431/",
+  "memory": "12.4 MB",
+  "problemId": 56,
+  "runtime": "0 ms",
+  "slug": "merge-intervals",
+  "sourceCode": "class Solution(object):\n    def merge(self, intervals):\n        \"\"\"\n        :type intervals: List[List[int]]\n        :rtype: List[List[int]]\n        \"\"\"\n        intervals.sort(key=lambda x: x[0])\n\n        result = []\n\n        for interval in intervals:\n            if not result or result[-1][1] < interval[0]:\n                result.append(interval)\n            else:\n                result[-1][1] = max(result[-1][1], interval[1])\n\n        return result",
+  "submittedAt": "2026-10-01T04:56:22.470Z",
+  "testCases": "Case 1:\nStatus: Passed\nInput:\nintervals = [[1,3],[2,6],[8,10],[15,18]]\nOutput = [[1,6],[8,10],[15,18]]\nExpected = [[1,6],[8,10],[15,18]]\n\nCase 2:\nStatus: Passed\nInput:\nintervals = [[1,4],[4,5]]\nOutput = [[1,5]]\nExpected = [[1,5]]\n\nCase 3:\nStatus: Passed\nInput:\nintervals = [[4,7],[1,4]]\nOutput = [[1,7]]\nExpected = [[1,7]]",
+  "title": "Merge Intervals",
+  "topics": [
+    "Array",
+    "Sorting",
+    "Quicksort"
+  ],
+  "submissionDate": "2026-10-01T04:56:22.470Z",
+  "folderName": "0056-merge-intervals",
+  "githubUrl": "https://github.com/sivakumr91/leetcode/blob/main/0056-merge-intervals/solution.py"
+}

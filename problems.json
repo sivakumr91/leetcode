@@ -1,5 +1,19 @@
 [
   {
+    "id": 56,
+    "title": "Merge Intervals",
+    "slug": "merge-intervals",
+    "difficulty": "Medium",
+    "language": "python",
+    "topics": [
+      "Array",
+      "Sorting",
+      "Quicksort"
+    ],
+    "solvedAt": "2026-10-01T04:56:22.470Z",
+    "folderName": "0056-merge-intervals"
+  },
+  {
     "id": 102,
     "title": "Binary Tree Level Order Traversal",
     "slug": "binary-tree-level-order-traversal",
