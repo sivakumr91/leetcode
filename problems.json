@@ -190,5 +190,20 @@
     ],
     "solvedAt": "2026-10-01T04:59:07.737Z",
     "folderName": "0763-partition-labels"
+  },
+  {
+    "id": 938,
+    "title": "Range Sum of BST",
+    "slug": "range-sum-of-bst",
+    "difficulty": "Easy",
+    "language": "python",
+    "topics": [
+      "Tree",
+      "Depth-First Search",
+      "Binary Search Tree",
+      "Binary Tree"
+    ],
+    "solvedAt": "2026-10-01T05:09:09.767Z",
+    "folderName": "0938-range-sum-of-bst"
   }
 ]

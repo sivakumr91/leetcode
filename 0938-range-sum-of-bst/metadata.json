@@ -1,0 +1,23 @@
+{
+  "description": "Given the `root` node of a binary search tree and two integers `low` and `high`, return *the sum of values of all nodes with a value in the **inclusive** range *`[low, high]`.\n\nExample 1:\n\n```\n\n**Input:** root = [10,5,15,3,7,null,18], low = 7, high = 15\n**Output:** 32\n**Explanation:** Nodes 7, 10, and 15 are in the range [7, 15]. 7 + 10 + 15 = 32.\n\n```\n\nExample 2:\n\n```\n\n**Input:** root = [10,5,15,3,7,13,18,1,null,6], low = 6, high = 10\n**Output:** 23\n**Explanation:** Nodes 6, 7, and 10 are in the range [6, 10]. 6 + 7 + 10 = 23.\n\n```\n\n**Constraints:**\n\n- The number of nodes in the tree is in the range `[1, 2 * 10^4]`.\n\n- `1 <= Node.val <= 10^5`\n\n- `1 <= low <= high <= 10^5`\n\n- All `Node.val` are **unique**.",
+  "difficulty": "Easy",
+  "language": "python",
+  "leetCodeUrl": "https://leetcode.com/problems/range-sum-of-bst/submissions/2158824590/",
+  "memory": "28.8 MB",
+  "problemId": 938,
+  "runtime": "8 ms",
+  "slug": "range-sum-of-bst",
+  "sourceCode": "# Definition for a binary tree node.\n# class TreeNode(object):\n#     def __init__(self, val=0, left=None, right=None):\n#         self.val = val\n#         self.left = left\n#         self.right = right\n\nclass Solution(object):\n    def rangeSumBST(self, root, low, high):\n        \"\"\"\n        :type root: Optional[TreeNode]\n        :type low: int\n        :type high: int\n        :rtype: int\n        \"\"\"\n\n        if not root:\n            return 0\n\n        total = 0\n\n        if low <= root.val <= high:\n            total += root.val\n\n        if root.val > low:\n            total += self.rangeSumBST(root.left, low, high)\n\n        if root.val < high:\n            total += self.rangeSumBST(root.right, low, high)\n\n        return total",
+  "submittedAt": "2026-10-01T05:09:09.767Z",
+  "testCases": "Case 1:\nStatus: Passed\nInput:\nroot = [10,5,15,3,7,null,18]\nlow = 7\nhigh = 15\nOutput = 32\nExpected = 32\n\nCase 2:\nStatus: Passed\nInput:\nroot = [10,5,15,3,7,13,18,1,null,6]\nlow = 6\nhigh = 10\nOutput = 23\nExpected = 23",
+  "title": "Range Sum of BST",
+  "topics": [
+    "Tree",
+    "Depth-First Search",
+    "Binary Search Tree",
+    "Binary Tree"
+  ],
+  "submissionDate": "2026-10-01T05:09:09.767Z",
+  "folderName": "0938-range-sum-of-bst",
+  "githubUrl": "https://github.com/sivakumr91/leetcode/blob/main/0938-range-sum-of-bst/solution.py"
+}
