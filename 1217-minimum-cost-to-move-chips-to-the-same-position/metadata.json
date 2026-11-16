@@ -1,0 +1,22 @@
+{
+  "description": "We have `n` chips, where the position of the `i^th` chip is `position[i]`.\n\nWe need to move all the chips to **the same position**. In one step, we can change the position of the `i^th` chip from `position[i]` to:\n\n- `position[i] + 2` or `position[i] - 2` with `cost = 0`.\n\n- `position[i] + 1` or `position[i] - 1` with `cost = 1`.\n\nReturn *the minimum cost* needed to move all the chips to the same position.\n\nExample 1:\n\n```\n\n**Input:** position = [1,2,3]\n**Output:** 1\n**Explanation:** First step: Move the chip at position 3 to position 1 with cost = 0.\nSecond step: Move the chip at position 2 to position 1 with cost = 1.\nTotal cost is 1.\n\n```\n\nExample 2:\n\n```\n\n**Input:** position = [2,2,2,3,3]\n**Output:** 2\n**Explanation:** We can move the two chips at position  3 to position 2. Each move has cost = 1. The total cost = 2.\n\n```\n\nExample 3:\n\n```\n\n**Input:** position = [1,1000000000]\n**Output:** 1\n\n```\n\n**Constraints:**\n\n- `1 <= position.length <= 100`\n\n- `1 <= position[i] <= 10^9`",
+  "difficulty": "Easy",
+  "language": "java",
+  "leetCodeUrl": "https://leetcode.com/problems/minimum-cost-to-move-chips-to-the-same-position/submissions/2197091652/",
+  "memory": "41.1 MB",
+  "problemId": 1217,
+  "runtime": "0 ms",
+  "slug": "minimum-cost-to-move-chips-to-the-same-position",
+  "sourceCode": "class Solution {\n    public int minCostToMoveChips(int[] position) {\n\n        int even = 0;\n        int odd = 0;\n\n        for (int i = 0; i < position.length; i++) {\n\n            if (position[i] % 2 == 0) {\n                even++;\n            } else {\n                odd++;\n            }\n        }\n\n        return Math.min(even, odd);\n    }\n}",
+  "submittedAt": "2026-11-16T06:16:30.516Z",
+  "testCases": "Case 1:\nStatus: Passed\nInput:\nposition = [1,2,3]\nOutput = 1\nExpected = 1\n\nCase 2:\nStatus: Passed\nInput:\nposition = [2,2,2,3,3]\nOutput = 2\nExpected = 2\n\nCase 3:\nStatus: Passed\nInput:\nposition = [1,1000000000]\nOutput = 1\nExpected = 1",
+  "title": "Minimum Cost to Move Chips to The Same Position",
+  "topics": [
+    "Array",
+    "Math",
+    "Greedy"
+  ],
+  "submissionDate": "2026-11-16T06:16:30.516Z",
+  "folderName": "1217-minimum-cost-to-move-chips-to-the-same-position",
+  "githubUrl": "https://github.com/sivakumr91/leetcode/blob/main/1217-minimum-cost-to-move-chips-to-the-same-position/solution.java"
+}

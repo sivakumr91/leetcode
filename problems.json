@@ -205,5 +205,19 @@
     ],
     "solvedAt": "2026-10-01T05:09:09.767Z",
     "folderName": "0938-range-sum-of-bst"
+  },
+  {
+    "id": 1217,
+    "title": "Minimum Cost to Move Chips to The Same Position",
+    "slug": "minimum-cost-to-move-chips-to-the-same-position",
+    "difficulty": "Easy",
+    "language": "java",
+    "topics": [
+      "Array",
+      "Math",
+      "Greedy"
+    ],
+    "solvedAt": "2026-11-16T06:16:30.516Z",
+    "folderName": "1217-minimum-cost-to-move-chips-to-the-same-position"
   }
 ]
