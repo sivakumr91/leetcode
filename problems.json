@@ -219,5 +219,18 @@
     ],
     "solvedAt": "2026-11-16T06:16:30.516Z",
     "folderName": "1217-minimum-cost-to-move-chips-to-the-same-position"
+  },
+  {
+    "id": 3701,
+    "title": "Compute Alternating Sum",
+    "slug": "compute-alternating-sum",
+    "difficulty": "Easy",
+    "language": "java",
+    "topics": [
+      "Array",
+      "Simulation"
+    ],
+    "solvedAt": "2026-11-20T05:09:26.984Z",
+    "folderName": "3701-compute-alternating-sum"
   }
 ]

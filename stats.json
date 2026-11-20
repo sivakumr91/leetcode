@@ -1,16 +1,16 @@
 {
-  "totalSolved": 15,
-  "easy": 6,
+  "totalSolved": 16,
+  "easy": 7,
   "medium": 9,
   "hard": 0,
   "currentStreak": 1,
   "longestStreak": 2,
   "languages": {
     "python": 14,
-    "java": 1
+    "java": 2
   },
   "topics": {
-    "Array": 5,
+    "Array": 6,
     "Binary Search": 1,
     "Tree": 9,
     "Breadth-First Search": 2,
@@ -31,12 +31,13 @@
     "Binary Lifting": 1,
     "Lowest Common Ancestor": 1,
     "Backtracking": 1,
-    "Math": 1
+    "Math": 1,
+    "Simulation": 1
   },
-  "lastSolved": "2026-11-16T06:16:30.516Z",
+  "lastSolved": "2026-11-20T05:09:26.984Z",
   "monthlySolves": {
     "2026-09": 4,
     "2026-10": 10,
-    "2026-11": 1
+    "2026-11": 2
   }
 }
