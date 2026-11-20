@@ -268,6 +268,18 @@
     "folderName": "1217-minimum-cost-to-move-chips-to-the-same-position"
   },
   {
+    "id": 1791,
+    "title": "Find Center of Star Graph",
+    "slug": "find-center-of-star-graph",
+    "difficulty": "Easy",
+    "language": "java",
+    "topics": [
+      "Graph Theory"
+    ],
+    "solvedAt": "2026-11-20T05:23:27.866Z",
+    "folderName": "1791-find-center-of-star-graph"
+  },
+  {
     "id": 3701,
     "title": "Compute Alternating Sum",
     "slug": "compute-alternating-sum",

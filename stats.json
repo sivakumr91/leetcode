@@ -1,13 +1,13 @@
 {
-  "totalSolved": 19,
-  "easy": 7,
+  "totalSolved": 20,
+  "easy": 8,
   "medium": 12,
   "hard": 0,
   "currentStreak": 1,
   "longestStreak": 2,
   "languages": {
     "python": 14,
-    "java": 5
+    "java": 6
   },
   "topics": {
     "Array": 6,
@@ -34,14 +34,14 @@
     "Math": 1,
     "Simulation": 1,
     "Union-Find": 2,
-    "Graph Theory": 3,
+    "Graph Theory": 4,
     "Graph Coloring": 1,
     "Bipartite Graph": 1
   },
-  "lastSolved": "2026-11-20T05:20:04.466Z",
+  "lastSolved": "2026-11-20T05:23:27.866Z",
   "monthlySolves": {
     "2026-09": 4,
     "2026-10": 10,
-    "2026-11": 5
+    "2026-11": 6
   }
 }
