@@ -71,6 +71,21 @@
     "folderName": "0113-path-sum-ii"
   },
   {
+    "id": 133,
+    "title": "Clone Graph",
+    "slug": "clone-graph",
+    "difficulty": "Medium",
+    "language": "java",
+    "topics": [
+      "Hash Table",
+      "Depth-First Search",
+      "Breadth-First Search",
+      "Graph Theory"
+    ],
+    "solvedAt": "2026-11-20T05:20:04.466Z",
+    "folderName": "0133-clone-graph"
+  },
+  {
     "id": 173,
     "title": "Binary Search Tree Iterator",
     "slug": "binary-search-tree-iterator",
