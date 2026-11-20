@@ -254,6 +254,20 @@
     "folderName": "0938-range-sum-of-bst"
   },
   {
+    "id": 997,
+    "title": "Find the Town Judge",
+    "slug": "find-the-town-judge",
+    "difficulty": "Easy",
+    "language": "java",
+    "topics": [
+      "Array",
+      "Hash Table",
+      "Graph Theory"
+    ],
+    "solvedAt": "2026-11-20T05:24:58.153Z",
+    "folderName": "0997-find-the-town-judge"
+  },
+  {
     "id": 1217,
     "title": "Minimum Cost to Move Chips to The Same Position",
     "slug": "minimum-cost-to-move-chips-to-the-same-position",
