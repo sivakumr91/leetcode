@@ -192,6 +192,23 @@
     "folderName": "0763-partition-labels"
   },
   {
+    "id": 785,
+    "title": "Is Graph Bipartite?",
+    "slug": "is-graph-bipartite",
+    "difficulty": "Medium",
+    "language": "java",
+    "topics": [
+      "Depth-First Search",
+      "Breadth-First Search",
+      "Union-Find",
+      "Graph Theory",
+      "Graph Coloring",
+      "Bipartite Graph"
+    ],
+    "solvedAt": "2026-11-20T05:15:26.503Z",
+    "folderName": "0785-is-graph-bipartite"
+  },
+  {
     "id": 938,
     "title": "Range Sum of BST",
     "slug": "range-sum-of-bst",
