@@ -150,6 +150,21 @@
     "folderName": "0543-diameter-of-binary-tree"
   },
   {
+    "id": 547,
+    "title": "Number of Provinces",
+    "slug": "number-of-provinces",
+    "difficulty": "Medium",
+    "language": "java",
+    "topics": [
+      "Depth-First Search",
+      "Breadth-First Search",
+      "Union-Find",
+      "Graph Theory"
+    ],
+    "solvedAt": "2026-11-20T05:18:53.705Z",
+    "folderName": "0547-number-of-provinces"
+  },
+  {
     "id": 700,
     "title": "Search in a Binary Search Tree",
     "slug": "search-in-a-binary-search-tree",

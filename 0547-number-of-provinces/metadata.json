@@ -1,0 +1,23 @@
+{
+  "description": "There are `n` cities. Some of them are connected, while some are not. If city `a` is connected directly with city `b`, and city `b` is connected directly with city `c`, then city `a` is connected indirectly with city `c`.\n\nA **province** is a group of directly or indirectly connected cities and no other cities outside of the group.\n\nYou are given an `n x n` matrix `isConnected` where `isConnected[i][j] = 1` if the `i^th` city and the `j^th` city are directly connected, and `isConnected[i][j] = 0` otherwise.\n\nReturn *the total number of **provinces***.\n\nExample 1:\n\n```\n\n**Input:** isConnected = [[1,1,0],[1,1,0],[0,0,1]]\n**Output:** 2\n\n```\n\nExample 2:\n\n```\n\n**Input:** isConnected = [[1,0,0],[0,1,0],[0,0,1]]\n**Output:** 3\n\n```\n\n**Constraints:**\n\n- `1 <= n <= 200`\n\n- `n == isConnected.length`\n\n- `n == isConnected[i].length`\n\n- `isConnected[i][j]` is `1` or `0`.\n\n- `isConnected[i][i] == 1`\n\n- `isConnected[i][j] == isConnected[j][i]`",
+  "difficulty": "Medium",
+  "language": "java",
+  "leetCodeUrl": "https://leetcode.com/problems/number-of-provinces/submissions/2199758821/",
+  "memory": "46.7 MB",
+  "problemId": 547,
+  "runtime": "1 ms",
+  "slug": "number-of-provinces",
+  "sourceCode": "class Solution {\n    public int findCircleNum(int[][] isConnected) {\n        int n = isConnected.length;\n        boolean[] visited = new boolean[n];\n        int provinces = 0;\n\n        for (int i = 0; i < n; i++) {\n            if (!visited[i]) {\n                dfs(i, isConnected, visited);\n                provinces++;\n            }\n        }\n\n        return provinces;\n    }\n\n    private void dfs(int city, int[][] isConnected, boolean[] visited) {\n        visited[city] = true;\n\n        for (int i = 0; i < isConnected.length; i++) {\n            if (isConnected[city][i] == 1 && !visited[i]) {\n                dfs(i, isConnected, visited);\n            }\n        }\n    }\n}",
+  "submittedAt": "2026-11-20T05:18:53.705Z",
+  "testCases": "Case 1:\nStatus: Passed\nInput:\nisConnected = [[1,1,0],[1,1,0],[0,0,1]]\nOutput = 2\nExpected = 2\n\nCase 2:\nStatus: Passed\nInput:\nisConnected = [[1,0,0],[0,1,0],[0,0,1]]\nOutput = 3\nExpected = 3",
+  "title": "Number of Provinces",
+  "topics": [
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union-Find",
+    "Graph Theory"
+  ],
+  "submissionDate": "2026-11-20T05:18:53.705Z",
+  "folderName": "0547-number-of-provinces",
+  "githubUrl": "https://github.com/sivakumr91/leetcode/blob/main/0547-number-of-provinces/solution.java"
+}

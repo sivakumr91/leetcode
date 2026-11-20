@@ -1,21 +1,21 @@
 {
-  "totalSolved": 17,
+  "totalSolved": 18,
   "easy": 7,
-  "medium": 10,
+  "medium": 11,
   "hard": 0,
   "currentStreak": 1,
   "longestStreak": 2,
   "languages": {
     "python": 14,
-    "java": 3
+    "java": 4
   },
   "topics": {
     "Array": 6,
     "Binary Search": 1,
     "Tree": 9,
-    "Breadth-First Search": 3,
+    "Breadth-First Search": 4,
     "Binary Tree": 9,
-    "Depth-First Search": 5,
+    "Depth-First Search": 6,
     "DP on Trees": 1,
     "Binary Search Tree": 5,
     "Stack": 1,
@@ -33,15 +33,15 @@
     "Backtracking": 1,
     "Math": 1,
     "Simulation": 1,
-    "Union-Find": 1,
-    "Graph Theory": 1,
+    "Union-Find": 2,
+    "Graph Theory": 2,
     "Graph Coloring": 1,
     "Bipartite Graph": 1
   },
-  "lastSolved": "2026-11-20T05:15:26.503Z",
+  "lastSolved": "2026-11-20T05:18:53.705Z",
   "monthlySolves": {
     "2026-09": 4,
     "2026-10": 10,
-    "2026-11": 3
+    "2026-11": 4
   }
 }
